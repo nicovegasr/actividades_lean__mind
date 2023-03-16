@@ -15,19 +15,19 @@ public class TestStringCalculatorShould {
     @Test
     public void returnAnEmptyString() {
         StringCalculator calculator = new StringCalculator();
-        assertEquals(calculator.calculator(""), "");
+        assertEquals("", calculator.calculator("1"));
     }
 
     @Test
     public void returnSameNumber() {
         StringCalculator calculator = new StringCalculator();
-        assertEquals(calculator.calculator("1"), "1");
+        assertEquals("1", calculator.calculator("1"));
     }
 
     @Test
     public void returnAddTwoNumbers() {
         StringCalculator calculator = new StringCalculator();
-        assertEquals(calculator.calculator("1,2"), "3");
+        assertEquals("3", calculator.calculator("1,2"));
     }
 
 }
