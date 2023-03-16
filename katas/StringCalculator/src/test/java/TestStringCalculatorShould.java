@@ -17,4 +17,17 @@ public class TestStringCalculatorShould {
         StringCalculator calculator = new StringCalculator();
         assertEquals(calculator.calculator(""), "");
     }
+
+    @Test
+    public void returnSameNumber() {
+        StringCalculator calculator = new StringCalculator();
+        assertEquals(calculator.calculator("1"), "1");
+    }
+
+    @Test
+    public void returnAddTwoNumbers() {
+        StringCalculator calculator = new StringCalculator();
+        assertEquals(calculator.calculator("1,2"), "3");
+    }
+
 }
