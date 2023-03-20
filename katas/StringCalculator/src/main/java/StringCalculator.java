@@ -10,6 +10,10 @@ public class StringCalculator {
             delimiter = Character.toString(numbers.charAt(2));
             numbersToCalculate = numbers.substring(4);
         }
+        return addNumbers(numbersToCalculate, delimiter);
+    }
+
+    private static int addNumbers(String numbersToCalculate, String delimiter) {
         String[] listNumbers = numbersToCalculate.split(delimiter);
         int add = Arrays.stream(listNumbers)
                 .map(Integer::parseInt)
@@ -17,5 +21,3 @@ public class StringCalculator {
         return add;
     }
 }
-
- // “//[delimiter]\n[numbers…]”
