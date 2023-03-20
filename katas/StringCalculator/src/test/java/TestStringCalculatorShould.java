@@ -15,19 +15,34 @@ public class TestStringCalculatorShould {
     @Test
     public void returnAnEmptyString() {
         StringCalculator calculator = new StringCalculator();
-        assertEquals("", calculator.calculator("1"));
+        assertEquals(0, calculator.calculator(""));
     }
 
     @Test
     public void returnSameNumber() {
         StringCalculator calculator = new StringCalculator();
-        assertEquals("1", calculator.calculator("1"));
+        assertEquals(1, calculator.calculator("1"));
     }
 
     @Test
     public void returnAddTwoNumbers() {
         StringCalculator calculator = new StringCalculator();
-        assertEquals("3", calculator.calculator("1,2"));
+        assertEquals(3, calculator.calculator("1,2"));
     }
 
+    @Test
+    public void returnAddUnknowNumbers() {
+        StringCalculator calculator = new StringCalculator();
+        assertEquals(6, calculator.calculator("1,2,3"));
+    }
+    @Test
+    public void returnAddWithNewRegex() {
+        StringCalculator calculator = new StringCalculator();
+        assertEquals(6, calculator.calculator("1\n2,3"));
+    }
+    @Test
+    public void returnAddWithAnothersDelimiters() {
+        StringCalculator calculator = new StringCalculator();
+        assertEquals(6, calculator.calculator("//;\n1;2;3"));
+    }
 }
