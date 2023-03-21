@@ -11,12 +11,7 @@ public class StringCalculator {
         String delimiter = data.get(0);
         String numbersToCalculate = data.get(1);
         List<String> numbersList = Arrays.asList(numbersToCalculate.split(delimiter));
-        try {
-            checkNegativeNumbers(numbersList);
-        }
-        catch (NegativeNumbers exception) {
-            throw exception;
-        }
+        checkNegativeNumbers(numbersList);
         return addNumbers(numbersList);
     }
 
