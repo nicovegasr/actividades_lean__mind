@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.regex.Pattern;
 
 public class StringCalculator {
 
@@ -22,14 +23,38 @@ public class StringCalculator {
     private static List<String> setDelimiterAndNumbers(String numbers) {
         String delimiter = "[,\n]";
         String numbersToCalculate = numbers;
-        if (numbers.charAt(0) == '/') {
-            delimiter = Character.toString(numbers.charAt(2));
-            numbersToCalculate = numbers.substring(4);
+        if (thereAreDelimiterIn(numbers)) {
+            if (thereAreLongDelimiterIn(numbers)) {
+                delimiter = longDelimiter(numbers);
+            } else {
+                delimiter = Character.toString(numbers.charAt(2));
+            }
+            numbersToCalculate = numbers.substring(numbers.indexOf('\n')+1);
         }
         List<String> result = new ArrayList<>(2);
         result.add(delimiter);
         result.add(numbersToCalculate);
         return result;
+    }
+
+    private static Boolean thereAreLongDelimiterIn(String numbers) {
+        if (numbers.charAt(2) == '[') {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    public static String longDelimiter(String numbers) {
+        String delimiter = numbers.substring(3, 6);
+        String escapedDelimiterToSpecialCharacter = Pattern.quote(delimiter);
+        return escapedDelimiterToSpecialCharacter;
+    }
+    private static Boolean thereAreDelimiterIn(String numbers) {
+        if (numbers.charAt(0) == '/') {
+            return true;
+        } else {
+            return false;
+        }
     }
     private static int addNumbers(List<String> listNumbers) {
         int add = 0;
