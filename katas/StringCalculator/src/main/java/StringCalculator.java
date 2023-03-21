@@ -4,12 +4,19 @@ import java.util.List;
 
 public class StringCalculator {
 
-    public static int add(String numbers) {
+    public static int add(String numbers) throws NegativeNumbers  {
         if (numbers.isEmpty()) return 0;
         List<String> data = setDelimiterAndNumbers(numbers);
         String delimiter = data.get(0);
         String numbersToCalculate = data.get(1);
-        return addNumbers(numbersToCalculate, delimiter);
+        List<String> numbersList = Arrays.asList(numbersToCalculate.split(delimiter));
+        try {
+            checkNegativeNumbers(numbersList);
+        }
+        catch (NegativeNumbers exception) {
+            throw exception;
+        }
+        return addNumbers(numbersList);
     }
 
     private static List<String> setDelimiterAndNumbers(String numbers) {
@@ -24,11 +31,25 @@ public class StringCalculator {
         result.add(numbersToCalculate);
         return result;
     }
-    private static int addNumbers(String numbersToCalculate, String delimiter) {
-        String[] listNumbers = numbersToCalculate.split(delimiter);
-        int add = Arrays.stream(listNumbers)
+    private static int addNumbers(List<String> listNumbers) {
+        int add = listNumbers.stream()
                 .map(Integer::parseInt)
-                .reduce(0, (accumulator, element) -> accumulator + element);
+                .reduce(0, Integer::sum);
         return add;
+    }
+
+    private static void checkNegativeNumbers(List<String> listNumbers) throws NegativeNumbers {
+        List<Integer> negativeNumbers = new ArrayList<>();
+        Boolean thereAreNegativeNumbers = false;
+        for(String number : listNumbers) {
+            int integerNumber = Integer.parseInt(number);
+            if (integerNumber < 0) {
+                thereAreNegativeNumbers = true;
+                negativeNumbers.add(integerNumber);
+            }
+        }
+        if (thereAreNegativeNumbers) {
+            throw new NegativeNumbers(negativeNumbers);
+        }
     }
 }

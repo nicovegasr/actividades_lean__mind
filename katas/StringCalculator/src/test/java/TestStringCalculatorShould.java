@@ -13,36 +13,38 @@ public class TestStringCalculatorShould {
     */
 
     @Test
-    public void returnAnEmptyString() {
-        StringCalculator calculator = new StringCalculator();
-        assertEquals(0, calculator.add(""));
+    public void returnAnEmptyString() throws NegativeNumbers {
+        assertEquals(0, StringCalculator.add(""));
     }
 
     @Test
-    public void returnSameNumber() {
-        StringCalculator calculator = new StringCalculator();
-        assertEquals(1, calculator.add("1"));
+    public void returnSameNumber() throws NegativeNumbers {
+        assertEquals(1, StringCalculator.add("1"));
     }
 
     @Test
-    public void returnAddTwoNumbers() {
-        StringCalculator calculator = new StringCalculator();
-        assertEquals(3, calculator.add("1,2"));
+    public void returnAddTwoNumbers() throws NegativeNumbers {
+        assertEquals(3, StringCalculator.add("1,2"));
     }
 
     @Test
-    public void returnAddUnknowNumbers() {
-        StringCalculator calculator = new StringCalculator();
-        assertEquals(6, calculator.add("1,2,3"));
+    public void returnAddUnknowNumbers() throws NegativeNumbers {
+        assertEquals(6, StringCalculator.add("1,2,3"));
     }
     @Test
-    public void returnAddWithNewRegex() {
-        StringCalculator calculator = new StringCalculator();
-        assertEquals(6, calculator.add("1\n2,3"));
+    public void returnAddWithNewRegex() throws NegativeNumbers {
+        assertEquals(6, StringCalculator.add("1\n2,3"));
     }
     @Test
-    public void returnAddWithAnothersDelimiters() {
-        StringCalculator calculator = new StringCalculator();
-        assertEquals(6, calculator.add("//;\n1;2;3"));
+    public void returnAddWithAnothersDelimiters() throws NegativeNumbers {
+        assertEquals(6, StringCalculator.add("//;\n1;2;3"));
+    }
+    @Test
+    public void returnAddWithNegativeNumbers() throws NegativeNumbers {
+        String errorResponse = "Negative numbers not allowed: [-1, -2]";
+
+        NegativeNumbers thrown = assertThrows(NegativeNumbers.class, () ->
+                StringCalculator.add("//;\n-1;-2;3"));
+        assertEquals(thrown.getMessage(), errorResponse);
     }
 }

@@ -24,6 +24,9 @@ dependencies {
     implementation 'com.google.guava:guava:23.0'
     implementation 'org.jetbrains:annotations:24.0.0'
 
-    // Use JUnit test framework
-    testImplementation 'junit:junit:4.12'
+    // Dependencia de JUnit 5
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.8.1'
+    testImplementation 'org.junit.platform:junit-platform-runner:1.8.2'
+    // Dependencia para ejecutar pruebas JUnit 4 en JUnit 5
+    testImplementation 'org.junit.vintage:junit-vintage-engine:5.8.1'
 }
