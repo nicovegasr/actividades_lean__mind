@@ -32,9 +32,11 @@ public class StringCalculator {
         return result;
     }
     private static int addNumbers(List<String> listNumbers) {
-        int add = listNumbers.stream()
-                .map(Integer::parseInt)
-                .reduce(0, Integer::sum);
+        int add = 0;
+        for (String number : listNumbers) {
+            if (Integer.parseInt(number) > 1000) ;
+            else add = add + Integer.parseInt(number);
+        }
         return add;
     }
 

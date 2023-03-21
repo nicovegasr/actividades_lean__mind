@@ -47,4 +47,8 @@ public class TestStringCalculatorShould {
                 StringCalculator.add("//;\n-1;-2;3"));
         assertEquals(thrown.getMessage(), errorResponse);
     }
+    @Test
+    public void returnAddWithNotNumbersGreaterThan1000() throws NegativeNumbers {
+        assertEquals(2, StringCalculator.add("//'\n2'3000"));
+    }
 }
