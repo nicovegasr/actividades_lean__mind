@@ -58,4 +58,12 @@ public class TestStringCalculatorShould {
     public void returnAddWithNotNumbersGreaterThan1000() throws NegativeNumbers {
         assertEquals(2, StringCalculator.add("//'\n2'3000"));
     }
+    @Test
+    public void returnAddWithLongDelimiters() throws NegativeNumbers {
+        assertEquals(2, StringCalculator.add("//[***]\n2***3000"));
+    }
+    @Test
+    public void returnAddWithLongDelimitersAndDefault() throws NegativeNumbers {
+        assertEquals(9, StringCalculator.add("//[***]\n2,3\n4***3000"));
+    }
 }

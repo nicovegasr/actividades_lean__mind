@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestStringCalculatorShould" tests="8" skipped="0" failures="0" errors="0" timestamp="2023-03-21T16:24:26" hostname="DESKTOP-4S9R5LJ" time="0.01">
+<testsuite name="TestStringCalculatorShould" tests="10" skipped="0" failures="0" errors="0" timestamp="2023-03-23T16:45:45" hostname="DESKTOP-4S9R5LJ" time="0.024">
   <properties/>
-  <testcase name="returnAddTwoNumbers" classname="TestStringCalculatorShould" time="0.003"/>
-  <testcase name="returnSameNumber" classname="TestStringCalculatorShould" time="0.001"/>
+  <testcase name="returnAddWithLongDelimitersAndDefault" classname="TestStringCalculatorShould" time="0.006"/>
+  <testcase name="returnAddTwoNumbers" classname="TestStringCalculatorShould" time="0.0"/>
+  <testcase name="returnSameNumber" classname="TestStringCalculatorShould" time="0.0"/>
   <testcase name="returnAddWithNegativeNumbers" classname="TestStringCalculatorShould" time="0.003"/>
   <testcase name="returnAddUnknowNumbers" classname="TestStringCalculatorShould" time="0.001"/>
-  <testcase name="returnAddWithNewDelimiter" classname="TestStringCalculatorShould" time="0.001"/>
+  <testcase name="returnAddWithNewDelimiter" classname="TestStringCalculatorShould" time="0.0"/>
   <testcase name="returnAddWithAnothersDelimiters" classname="TestStringCalculatorShould" time="0.0"/>
+  <testcase name="returnAddWithLongDelimiters" classname="TestStringCalculatorShould" time="0.0"/>
   <testcase name="returnAddWithNotNumbersGreaterThan1000" classname="TestStringCalculatorShould" time="0.0"/>
   <testcase name="returnAnEmptyString" classname="TestStringCalculatorShould" time="0.0"/>
   <system-out><![CDATA[]]></system-out>

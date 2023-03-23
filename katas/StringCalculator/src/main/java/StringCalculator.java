@@ -20,7 +20,7 @@ public class StringCalculator {
         String numbersToCalculate = numbers;
         if (thereAreDelimiterIn(numbers)) {
             if (thereAreLongDelimiterIn(numbers)) {
-                delimiter = longDelimiter(numbers);
+                delimiter = delimiter + "|" + longDelimiter(numbers);
             } else {
                 delimiter = Character.toString(numbers.charAt(2));
             }
@@ -40,7 +40,8 @@ public class StringCalculator {
         }
     }
     public static String longDelimiter(String numbers) {
-        String delimiter = numbers.substring(3, 6);
+        String delimiterWithBrackets = numbers.split("\n")[0].substring(3);
+        String delimiter = delimiterWithBrackets.substring(0, delimiterWithBrackets.length()-1);
         String escapedDelimiterToSpecialCharacter = Pattern.quote(delimiter);
         return escapedDelimiterToSpecialCharacter;
     }
