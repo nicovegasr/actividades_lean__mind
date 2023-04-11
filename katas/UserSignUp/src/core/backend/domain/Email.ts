@@ -2,6 +2,7 @@ export class Email {
   private constructor(public email: string) {  }
 
   public static createEmail(email: string): Email {
-    throw new Error("Not implemented")
+    if (!email) { throw new Error("Email is empty.") }
+    return new Email(email)
   }
 }
