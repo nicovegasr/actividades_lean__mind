@@ -19,7 +19,9 @@ describe('User test.', () => {
   })
 
   describe('Wrong Name test.', () => {
-
+    it('Empty Name will throw an Error.', () => {
+      expect(() => User.createUser("", 22, "nico@gmail.com") ).toThrow("Name cannot be empty.")
+    })
   
   })
 
