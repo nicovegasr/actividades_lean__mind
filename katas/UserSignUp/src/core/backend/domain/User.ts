@@ -6,6 +6,7 @@ export class User {
   private constructor(public name: Name, public age: Age, public Email: Email) {  }
   
   public static createUser(name: string, age: number, email: string): User {
+    const userEmail = Email.createEmail(email) 
     throw new Error("Not implemented.")
   }
 }

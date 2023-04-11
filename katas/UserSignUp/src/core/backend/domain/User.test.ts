@@ -13,6 +13,9 @@ describe('User test.', () => {
     it('Empty Email will throw an Error.', () => {
       expect(() => User.createUser("Nico", 22, "") ).toThrow("Email is empty.")
     })
+    it('Non-format Email will throw an Error.', () => {
+      expect(() => User.createUser("Nico", 22, "non-format@") ).toThrow("Email doesnt have the correct format.")
+    })
   })
 
   describe('Wrong Name test.', () => {
