@@ -10,4 +10,8 @@ describe('Email test.', () => {
     expect( () => Email.createEmail("") ).toThrow("Email is empty.")
   });
 
+  test('Non-format email should throw an error', () => {
+    expect( () => Email.createEmail("noformat@") ).toThrow("Email doesnt have the correct format.")
+  });
+
 })
