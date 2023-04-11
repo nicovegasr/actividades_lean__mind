@@ -10,4 +10,10 @@ describe('Name test.', () => {
     const myName: Name = Name.createName("Nico");
     expect(myName).toBeInstanceOf(Name)
   });
+
+  test('Name cannot be empty', () => {
+    expect(() => Name.createName("") ).toThrow("Name cannot be empty.")
+  });
+
+
 })
