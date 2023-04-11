@@ -26,7 +26,12 @@ describe('User test.', () => {
   })
 
   describe('Wrong Age test.', () => {
-
+    it('Age under 13 will throw an Error.', () => {
+      expect(() => User.createUser("Nico", 10, "nico@gmail.com") ).toThrow("You have to be 13 years old or older to create an Age.")
+    })
+    it('Float age will throw an Error.', () => {
+      expect(() => User.createUser("Nico", 17.5, "nico@gmail.com") ).toThrow("Age must be an integer.")
+    })
   
   })
 
