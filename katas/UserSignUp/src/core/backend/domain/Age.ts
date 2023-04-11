@@ -1,5 +1,5 @@
 export class Age {
-  private constructor(private age: number) {  }
+  private constructor(public age: number) {  }
   
   public static createAge(age: number): Age {
     const ageIsUnder13 = age < 13

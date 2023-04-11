@@ -18,5 +18,10 @@ describe('Age test.', () => {
   test('Not integer age thrown an error', () => {
     expect(() => Age.createAge(12.5)).toThrow("Age must be an integer.")
   });
+  
+  test('Age 13 is created', () => {
+    const myAge: Age = Age.createAge(13);
+    expect(myAge.age).toBe(13)
+  });
 
 })
