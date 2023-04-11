@@ -9,6 +9,6 @@ export class User {
     const userEmail = Email.createEmail(email) 
     const userName = Name.createName(name) 
     const userAge = Age.createAge(age) 
-    throw new Error("Not implemented.")
+    return new User(userName, userAge, userEmail)
   }
 }
