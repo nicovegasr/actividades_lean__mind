@@ -1,6 +1,7 @@
 import {Age} from "./Age";
 /** Approach: Inside-out
  * 1.- Age is created
+ * 2.- Age 0 doesn´t exist -> throw Error
  */
 describe('Age test.', () => {
 

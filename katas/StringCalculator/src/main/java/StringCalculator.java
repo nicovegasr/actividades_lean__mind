@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.regex.Pattern;
 
 public class StringCalculator {
+    // Way to handle Regex in Java: String delimiter = "[,\n]|\\*\\*\\*|---|\\\\\\|";
 
     public static int add(String numbers) throws NegativeNumbers  {
         if (numbers.isEmpty()) return 0;
@@ -33,11 +34,7 @@ public class StringCalculator {
     }
 
     private static Boolean thereAreLongDelimiterIn(String numbers) {
-        if (numbers.charAt(2) == '[') {
-            return true;
-        } else {
-            return false;
-        }
+        return (numbers.charAt(2) == '[');
     }
     public static String longDelimiter(String numbers) {
         String delimiterWithBrackets = numbers.split("\n")[0].substring(3);

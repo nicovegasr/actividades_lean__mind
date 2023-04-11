@@ -47,7 +47,7 @@ public class TestStringCalculatorShould {
         assertEquals(6, StringCalculator.add("//;\n1;2;3"));
     }
     @Test
-    public void returnAddWithNegativeNumbers() throws NegativeNumbers {
+    public void returnAddWithNegativeNumbers() {
         String errorResponse = "Negative numbers not allowed: [-1, -2]";
 
         NegativeNumbers thrown = assertThrows(NegativeNumbers.class, () ->

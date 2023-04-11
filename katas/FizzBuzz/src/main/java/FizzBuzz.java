@@ -6,7 +6,7 @@ import java.util.List;
 
 
 public class FizzBuzz {
-    public static @NotNull List<String> fizzBuzzMethod(int pupils) {
+    public static List<String> fizzBuzzMethod(int pupils) {
         List<String> result = new ArrayList<>(pupils);
         for (int pupil = 1; pupil <= pupils; pupil++) {
             String pupilResult = buildingResult(pupil);
@@ -17,13 +17,13 @@ public class FizzBuzz {
 
     private static String buildingResult(int pupil) {
         String result = "";
-        result = result.concat(checkFizz(pupil));
-        result = result.concat(checkBuzz(pupil));
+        result = result.concat(findFizz(pupil));
+        result = result.concat(findBuzz(pupil));
         if (result.isEmpty()) result = Integer.toString(pupil);
         return result;
     }
 
-    private static String checkFizz(int pupil) {
+    private static String findFizz(int pupil) {
         String result = "";
         String pupilString = Integer.toString(pupil);
         if (pupil % 3 == 0) result = result.concat("Fizz");
@@ -31,7 +31,7 @@ public class FizzBuzz {
         return result;
     }
 
-    private static String checkBuzz(int pupil) {
+    private static String findBuzz(int pupil) {
         String result = "";
         String pupilString = Integer.toString(pupil);
         if (pupil % 5 == 0) result = result.concat("Buzz");
