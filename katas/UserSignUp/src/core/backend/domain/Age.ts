@@ -1,7 +1,7 @@
-interface AgeInterface {
-  age: number
-}
-
-export class Age implements AgeInterface {
-  constructor(public age: number) {  }
+export class Age {
+  private constructor(private age: number) {  }
+  
+  public static createAge(age: number): Age {
+    return new Age(age)
+  }
 }
