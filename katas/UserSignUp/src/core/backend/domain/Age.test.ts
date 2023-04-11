@@ -7,7 +7,7 @@ import {Age} from "./Age";
 describe('Age test.', () => {
 
   test('Age is created with factory method.', () => {
-    const myAge: Age = Age.createAge(18);
+    const myAge: Age = Age.createAge(13);
     expect(myAge).toBeInstanceOf(Age)
   });
 
