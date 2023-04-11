@@ -10,4 +10,7 @@ describe('Age test.', () => {
     expect(myAge).toBeInstanceOf(Age)
   });
 
+  test('Age under 13 thrown an error', () => {
+    expect(() => Age.createAge(12)).toThrow("You have to be 13 years old or older to create an Age.")
+  });
 })
