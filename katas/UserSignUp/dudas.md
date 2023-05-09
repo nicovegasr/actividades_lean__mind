@@ -23,8 +23,12 @@ async saveUser(request, response) {
  
 **Conclusion:**  se hacen throws desde dominio y se manejan en infraestructuras. En algunos casos con infraestructuras variables se hacen handle de infr a alpicacion y  de aplicacion a dominio
 
+**Matiz**: Los errores lanzados desde domino deberian encapsularse luego en la parte de casos de usos en errores propios para tener mas claro porque falla la aplicacion.
+
 3. ¿La lógica de si el usuario existe debe ser guardado o no debe ir en el repository o en el servicio? 
 
-**Conclusion:**  
+**Conclusion:**  En el caso de uso. Si es una decision de negocio tiene que estar en el caso de uso, el repositorio solo se ocupa de cosas de la base de datos.
 
 ---
+
+Anotaciones: A la hora de trabajar con base de datos hay una parte de transacciones donde hay que tener en cuenta el tema de rollback y de abrir transacciones de guardado, si se hace un save y se corrompe la base de datos a pelo no hay rollback y se complica todo.
