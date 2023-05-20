@@ -13,12 +13,15 @@ public class CreateFeature {
         if (validateSecondAction(secondAction) != null) {
             return validateSecondAction(secondAction);
         }
+        if (validateThirdAction(thirdAction) != null) {
+            return validateThirdAction(thirdAction);
+        }
         return Either.right(0);
     }
 
     private Either<FeatureError, Integer> validateFirstAction(Actions firstAction) {
         if (firstAction == Actions.BABY_STEP) {
-            return Either.left(FeatureError.MAKING_CODE_FIRST);
+            return Either.left(FeatureError.SHOULD_NOT_MAKE_CODE_FIRST);
         } else if (firstAction == Actions.REFACTOR) {
             return Either.left(FeatureError.NONSENSE_REFACTOR);
         }
@@ -29,6 +32,14 @@ public class CreateFeature {
             return Either.left(FeatureError.ALREADY_HAVE_TEST);
         } else if (secondAction == Actions.REFACTOR) {
             return Either.left(FeatureError.NONSENSE_REFACTOR);
+        }
+        return null;
+    }
+    private Either<FeatureError, Integer> validateThirdAction(Actions thirdAction) {
+        if (thirdAction == Actions.TEST) {
+            return Either.left(FeatureError.ALREADY_HAVE_TEST);
+        } else if (thirdAction == Actions.BABY_STEP) {
+            return Either.left(FeatureError.CODE_ALREADY_IMPLEMENTED);
         }
         return null;
     }
