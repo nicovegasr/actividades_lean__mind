@@ -47,5 +47,9 @@ public class CreateFeatureTest {
 
         assertEquals(response.getLeft(), FeatureError.NONSENSE_REFACTOR);
     }
+    @Test
+    public void should_tell_me_test_test_already_created_because_second_action_is_incorrect() {
+
+    }
 
 }
