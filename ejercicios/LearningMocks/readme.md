@@ -64,3 +64,5 @@ para cada entidad que compone nuestra aplicación (UserRepository, CommentsRepos
 Este patrón nos permite abstraer nuestra aplicación de la lógica de persistencia que usaremos,
 permitiendo que si en un futuro se quiere cambiar el modo de almacenamiento, solo tengamos que modificar 
 los repositorios, sin tener que refactorizar toda nuestra aplicación.
+    
+> TAGS: MOCKS, REPOSITORY
