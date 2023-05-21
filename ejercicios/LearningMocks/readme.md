@@ -55,3 +55,12 @@ y sus funciones particulares.
 A continuación veremos las conclusiones, por lo que te recomiendo terminar el ejercicio antes de 
 leer el siguiente apartado.
 
+## <span style="color:orange"> CONCLUSIONES
+
+En aplicaciones web, la biblioteca sería nuestra base de datos, las estanterías serian nuestros repositorios
+y cada tipo de libro sería una entidad o un modelo de nuestra aplicación, así, podemos crear repositorios
+para cada entidad que compone nuestra aplicación (UserRepository, CommentsRepository, MessageRepository).
+
+Este patrón nos permite abstraer nuestra aplicación de la lógica de persistencia que usaremos,
+permitiendo que si en un futuro se quiere cambiar el modo de almacenamiento, solo tengamos que modificar 
+los repositorios, sin tener que refactorizar toda nuestra aplicación.

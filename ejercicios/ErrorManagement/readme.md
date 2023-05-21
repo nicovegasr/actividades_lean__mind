@@ -68,19 +68,10 @@ Ahora con esta explicación, puedes añadir los distintos errores que pueden exi
 ---
 
 # <span style="color:orange">FORMAS DE MANEJAR ERRORES</span>
-En esta sección comentare 3 formas de manejar errores que yo conozco
-con 1 ventaja y 1 desventaja para ser breve.
-1. ``Loggear y detener la aplicación``: El primer acercamiento 
-que me enseñaron a mí particularmente y creo que es el más común
-al inicio es hacer un ``console.log()`` y detener la aplicación,
-informandole al usuario de porqué se ha detenido la ejecución para
-que en futuras ocasiones no cometa el mismo error.
-   1. Ventaja: La aplicación es estricta y robusta, un enfoque
-   ventajoso en algunos ámbitos.
-   2. Desventaja: La aplicación no es resiliente ya que no puede
-   recuperarse de fallos y en entornos dinámicos no es válido.
-2. ``Try - Catch``: Con esta sentencia podemos manejar los distintos errores dependiendo
-3. ``Either``: 
+
+1. ``Loggear y detener la aplicación``.
+2. ``Try - Catch``.
+3. ``Either``.
 ---
 
 # <span style="color:orange">CONSIDERACIONES</span>
