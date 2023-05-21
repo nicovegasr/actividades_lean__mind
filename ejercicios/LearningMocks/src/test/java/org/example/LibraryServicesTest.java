@@ -4,7 +4,7 @@ package org.example;
 import io.vavr.control.Either;
 import org.junit.jupiter.api.*;
 
-import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
 public class LibraryServicesTest {
@@ -45,9 +45,20 @@ public class LibraryServicesTest {
     public void get_a_book_from_my_bookshelf() {
         book = Book.NORMAL_BOOK;
 
-        when(normalBookShelf.get_normal_book(book)).thenReturn(book);
+        when(normalBookShelf.book_exists(book)).thenReturn(true);
         Either<BookWarning, Book> response = libraryServices.get_a_book(book);
 
         assertTrue(response.isRight());
+    }
+
+    @Test
+    public void try_to_get_a_nonexistent_book_from_my_bookshelf() {
+        book = Book.NORMAL_BOOK;
+
+        when(normalBookShelf.book_exists(book)).thenReturn(false);
+        Either<BookWarning, Book> response = libraryServices.get_a_book(book);
+
+        verify(normalBookShelf, never()).get_normal_book(book);
+        assertEquals(response.getLeft(), BookWarning.NONEXISTENT_BOOK);
     }
 }
