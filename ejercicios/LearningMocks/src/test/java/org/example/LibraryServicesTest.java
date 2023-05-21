@@ -41,4 +41,13 @@ public class LibraryServicesTest {
         verify(normalBookShelf, never()).add_normal_book(book);
         assertEquals(response.getLeft(), BookWarning.BOOK_ALREADY_EXISTS);
     }
+    @Test
+    public void get_a_book_from_my_bookshelf() {
+        book = Book.NORMAL_BOOK;
+
+        when(normalBookShelf.get_normal_book(book)).thenReturn(book);
+        Either<BookWarning, Book> response = libraryServices.get_a_book(book);
+
+        assertTrue(response.isRight());
+    }
 }
