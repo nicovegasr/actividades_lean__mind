@@ -1,4 +1,3 @@
 # Ejercicios
 
-Este apartado reflejará distintos ejercicios de código propuestos en el libro de Carlos Blé: Código Sostenible.
-
+La idea de este apartado es proponer mis ejercicios con conclusiones propias.
