@@ -60,8 +60,8 @@ enum Actions {
 }
 ```
 ### Ejemplos de salidas:
-1. `create_my_feature(CREATE_TEST, MAKE_BABY_STEP_CODE, REFACTOR_CODE, NO_DEADLINE` ➜ 0
-2. `create_my_feature(MAKE_ALL_THE_CODE, INFORM_TECHNICAL_DEBTS, STOP_WORKING, DEADLINE_SOON` ➜ 0
+1. `create_my_feature(CREATE_TEST, MAKE_BABY_STEP_CODE, REFACTOR_CODE, NO_DEADLINE)` ➜ 0
+2. `create_my_feature(MAKE_ALL_THE_CODE, INFORM_TECHNICAL_DEBTS, STOP_WORKING, DEADLINE_SOON)` ➜ 0
 
 Ahora con esta explicación, puedes añadir los distintos errores que pueden existir con la combinacion de las distintas acciones. No hace falta añadirlos todos, lo importante es el planteamiento.
 
