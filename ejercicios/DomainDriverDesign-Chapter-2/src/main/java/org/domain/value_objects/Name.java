@@ -5,7 +5,7 @@ import io.vavr.control.Either;
 import org.domain.warnings.NameWarning;
 
 public class Name {
-    private String name;
+    private final String name;
     private Name(String name) {
         this.name = name;
     }
