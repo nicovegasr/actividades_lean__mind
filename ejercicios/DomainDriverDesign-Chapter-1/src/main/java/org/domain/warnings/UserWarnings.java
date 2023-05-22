@@ -4,8 +4,8 @@ public class UserWarnings {
     private AgeWarning ageWarning;
     private EmailWarning emailWarning;
     private NameWarning nameWarning;
-    public UserWarnings() {
-    }
+    private PasswordWarning passwordWarning;
+    public UserWarnings() { }
     public AgeWarning getAgeWarning() {
         return ageWarning;
     }
@@ -23,6 +23,10 @@ public class UserWarnings {
     }
     public void setNameWarning(NameWarning nameWarning) {
         this.nameWarning = nameWarning;
+    }
+    public PasswordWarning getPasswordWarning() { return passwordWarning; }
+    public void setPasswordWarning(PasswordWarning passwordWarning) {
+        this.passwordWarning = passwordWarning;
     }
 
     public Boolean warningExist() {

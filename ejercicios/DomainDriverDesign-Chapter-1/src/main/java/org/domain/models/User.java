@@ -4,31 +4,32 @@ import io.vavr.control.Either;
 import org.domain.value_objects.Age;
 import org.domain.value_objects.Email;
 import org.domain.value_objects.Name;
-import org.domain.warnings.AgeWarning;
-import org.domain.warnings.EmailWarning;
-import org.domain.warnings.NameWarning;
-import org.domain.warnings.UserWarnings;
+import org.domain.value_objects.Password;
+import org.domain.warnings.*;
 
 public class User {
     private final Name username;
     private final Email email;
     private final Age age;
-    private User(Name username, Email email, Age age) {
+    private final Password password;
+    private User(Name username, Email email, Age age, Password password) {
         this.username = username;
         this.email = email;
         this.age = age;
+        this.password = password;
     }
-    public static Either<UserWarnings, User> createUser(String username, String email, int age) {
+    public static Either<UserWarnings, User> createUser(String username, String email, int age, String password) {
         Either<NameWarning, Name> nameCreated = Name.createName(username);
         Either<EmailWarning, Email> emailCreated = Email.createEmail(email);
         Either<AgeWarning, Age> ageCreated = Age.createAge(age);
-        UserWarnings userWarning = User.validate(nameCreated, emailCreated, ageCreated);
+        Either<PasswordWarning, Password> passwordCreated = Password.createPassword(password);
+        UserWarnings userWarning = User.validate(nameCreated, emailCreated, ageCreated, passwordCreated);
         if (userWarning.warningExist()){
             return Either.left(userWarning);
         }
-        return Either.right(new User(nameCreated.get(), emailCreated.get(), ageCreated.get()));
+        return Either.right(new User(nameCreated.get(), emailCreated.get(), ageCreated.get(), passwordCreated.get()));
     }
-    private static UserWarnings validate(Either<NameWarning, Name> nameCreated, Either<EmailWarning, Email> emailCreated, Either<AgeWarning, Age> ageCreated) {
+    private static UserWarnings validate(Either<NameWarning, Name> nameCreated, Either<EmailWarning, Email> emailCreated, Either<AgeWarning, Age> ageCreated, Either<PasswordWarning, Password> passwordCreated) {
         UserWarnings userWarning = new UserWarnings();
         if (nameCreated.isLeft()) {
             userWarning.setNameWarning(nameCreated.getLeft());
@@ -38,6 +39,9 @@ public class User {
         }
         if (ageCreated.isLeft()) {
             userWarning.setAgeWarning(ageCreated.getLeft());
+        }
+        if(passwordCreated.isLeft()){
+            userWarning.setPasswordWarning(passwordCreated.getLeft());
         }
         return userWarning;
     }
@@ -52,4 +56,6 @@ public class User {
     public Integer getAge() {
         return age.getAge();
     }
+
+    public String getPassword() { return password.getPassword();}
 }
