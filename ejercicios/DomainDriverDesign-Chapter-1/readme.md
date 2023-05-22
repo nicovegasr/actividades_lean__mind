@@ -34,8 +34,8 @@ aplicación, por lo tanto, si tenemos la siguiente estructura:
 
 ```java
 interface Animal{
-    public Float getWeight();
-    public Float getHeight();
+    Float getWeight();
+    Float getHeight();
 }
 
 public class Dog implements Animal { }
@@ -97,8 +97,6 @@ En este momento vamos a plantear el dominio de nuestra aplicación:
 * Dominio: En él residen todos los modelos, entidades, value-objects que son propios de 
 nuestra lógica de negocio (En este caso nuestra lógica de negocio es: Validar campos y almacenar los usuarios de nuestra aplicación)
 
-De momento no hay más capas, solo el dominio, por lo que no entraremos en debates de: "donde van los servicios o casos de uso"
-
 Por ello, definiremos el dominio con el modelo de Usuario y aquí estableceremos la primera problemática:
 
 * La forma de persistir de la aplicación es externa a nuestra lógica de negocio, por lo que como podemos decirle al dominio que tendremos un repositorio.
@@ -112,3 +110,5 @@ A la hora de plantear nuestro dominio, hay algunos debates sobre como validar lo
 2. Crear métodos de validación en los servicios para que los modelos de dominio sean nuestro happy path.
 
 Con esto en mente ya podemos empezar a programar.
+
+> TAGS: PATRON REPOSITORY, DOMINIO, INVERSION_DEPENDENCIA, INYECCIÓN_DEPENDENCIAS, PATRON_FACTORY
