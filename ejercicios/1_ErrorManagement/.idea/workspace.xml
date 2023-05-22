@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="fb084442-0dd8-41ef-86c6-b91359e3f95e" name="Changes" comment=":fire: Learning Mocks &quot;terminado&quot;." />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2Q1PmFhNKPmYpN5x24GL95tP9oR" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "last_opened_file_path": "C:/Users/nicol/Desktop/Lean mind PE/actividades_lean__mind/ejercicios/ErrorManagement",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.example" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.example" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.CreateFeatureTest">
+    <configuration name="CreateFeatureTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ErrorManagement" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.CreateFeatureTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreateFeatureTest.should_tell_me_nonsense_refactor_because_second_action_is_incorrect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ErrorManagement" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.CreateFeatureTest" />
+      <option name="METHOD_NAME" value="should_tell_me_nonsense_refactor_because_second_action_is_incorrect" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreateFeatureTest.should_tell_me_test_already_created_because_third_action_is_incorrect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ErrorManagement" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.CreateFeatureTest" />
+      <option name="METHOD_NAME" value="should_tell_me_test_already_created_because_third_action_is_incorrect" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreateFeatureTest.should_tell_me_test_code_already_implemented_because_third_action_is_incorrect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ErrorManagement" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.CreateFeatureTest" />
+      <option name="METHOD_NAME" value="should_tell_me_test_code_already_implemented_because_third_action_is_incorrect" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreateFeatureTest.should_tell_me_test_test_already_created_because_second_action_is_incorrect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ErrorManagement" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.CreateFeatureTest" />
+      <option name="METHOD_NAME" value="should_tell_me_test_test_already_created_because_second_action_is_incorrect" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.CreateFeatureTest" />
+        <item itemvalue="JUnit.CreateFeatureTest.should_tell_me_test_code_already_implemented_because_third_action_is_incorrect" />
+        <item itemvalue="JUnit.CreateFeatureTest.should_tell_me_test_already_created_because_third_action_is_incorrect" />
+        <item itemvalue="JUnit.CreateFeatureTest.should_tell_me_test_test_already_created_because_second_action_is_incorrect" />
+        <item itemvalue="JUnit.CreateFeatureTest.should_tell_me_nonsense_refactor_because_second_action_is_incorrect" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fb084442-0dd8-41ef-86c6-b91359e3f95e" name="Changes" comment="" />
+      <created>1684518277367</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1684518277367</updated>
+      <workItem from="1684518278053" duration="793000" />
+      <workItem from="1684519391700" duration="8702000" />
+      <workItem from="1684593049749" duration="3911000" />
+      <workItem from="1684597461260" duration="1241000" />
+      <workItem from="1684663499629" duration="406000" />
+      <workItem from="1684679358064" duration="1504000" />
+    </task>
+    <task id="LOCAL-00001" summary="test(should_create_my_feature_with_tdd): Red - Green - Refactor.">
+      <created>1684527233642</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1684527233642</updated>
+    </task>
+    <task id="LOCAL-00002" summary="test(should_tell_me_to_not_make_code_first): Red - Green - Refactor.">
+      <created>1684593268027</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1684593268027</updated>
+    </task>
+    <task id="LOCAL-00003" summary="test(should_tell_me_nonsense_refactor): Red - Green - Refactor.">
+      <created>1684595159572</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1684595159572</updated>
+    </task>
+    <task id="LOCAL-00004" summary=":construction: test(should_tell_me_nonsense_refactor_because_second_action_is_incorrect): Red - Green - Refactor. Additional: Test names changed">
+      <created>1684596451965</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1684596451965</updated>
+    </task>
+    <task id="LOCAL-00005" summary=":ambulance: Last commit amended for a mistake. Test names changed.">
+      <created>1684596618201</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1684596618201</updated>
+    </task>
+    <task id="LOCAL-00006" summary=":fire: Manejo de errores &quot;terminado&quot;.">
+      <created>1684598584290</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1684598584290</updated>
+    </task>
+    <task id="LOCAL-00007" summary=":fire: Learning Mocks &quot;terminado&quot;.">
+      <created>1684679485292</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1684679485292</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="test(should_create_my_feature_with_tdd): Red - Green - Refactor." />
+    <MESSAGE value="test(should_tell_me_to_not_make_code_first): Red - Green - Refactor." />
+    <MESSAGE value="test(should_tell_me_nonsense_refactor): Red - Green - Refactor." />
+    <MESSAGE value="test(should_tell_me_nonsense_refactor_because_second_action_is_incorrect): Red - Green - Refactor.&#10;&#10;Refactor : Change Test names." />
+    <MESSAGE value=":construction: test(should_tell_me_nonsense_refactor_because_second_action_is_incorrect): Red - Green - Refactor. Additional: Test names changed" />
+    <MESSAGE value=":ambulance: Last commit amended for a mistake. Test names changed." />
+    <MESSAGE value=":fire: Manejo de errores &quot;terminado&quot;." />
+    <MESSAGE value=":fire: Learning Mocks &quot;terminado&quot;." />
+    <option name="LAST_COMMIT_MESSAGE" value=":fire: Learning Mocks &quot;terminado&quot;." />
+  </component>
+</project>
