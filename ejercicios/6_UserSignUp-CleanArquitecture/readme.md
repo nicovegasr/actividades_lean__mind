@@ -10,8 +10,8 @@ De momento no tengo claro donde deberían ir ni el nombre, sin embargo, saqué a
 
 Mi idea es la siguiente:
 
-* Crear una clase `UserACL` que tenga todas las validaciones referentes a lo que viene de fuera (seguridad, campos correctos).
-* Crear un DTO `UserDTO` que con un método de factoría compruebe que todos los campos son correctos y sus validaciones particulares (Que el nombre no esté vacío ...)
+* Crear una clase `UserRequestValidate` que tenga todas las validaciones en infraestructura.
+* Crear un DTO `UserDTO` que con un método de factoría que devuelva el usuario de dominio.
 
 Con esto, entraremos a nuestra lógica de negocio solo cuando nuestros datos estén bien y la las capas de dentro como por ejemplo aplicación solo manejarán comportamientos excepcionales propios como que no se pueda guardar un usuario en la base de datos.
 
