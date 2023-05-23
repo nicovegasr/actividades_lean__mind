@@ -1,7 +1,8 @@
+import { UserRepository } from "../../domain/interfaces/UserRepository";
 import { User } from "../../domain/models/User";
 import { UserModel } from "../models/UserModel";
 
-export class UserRepositoryMongoAdapter {
+export class UserRepositoryMongoAdapter implements UserRepository {
   async save(user: User): Promise<void> {
     const userDocument = new UserModel(user);
     await userDocument.save();

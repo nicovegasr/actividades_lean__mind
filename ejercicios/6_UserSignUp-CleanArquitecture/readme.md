@@ -15,4 +15,4 @@ Mi idea es la siguiente:
 
 Con esto, entraremos a nuestra lógica de negocio solo cuando nuestros datos estén bien y la las capas de dentro como por ejemplo aplicación solo manejarán comportamientos excepcionales propios como que no se pueda guardar un usuario en la base de datos.
 
-Lo voy a hacer en un servidor de express porque tengo más experiencia con TypeScript.
+Lo voy a hacer en un servidor de express porque tengo más experiencia con TypeScript, no usaré variables de entorno etc porque quiero centrarme en la estructura.
